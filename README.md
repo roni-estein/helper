@@ -3,7 +3,7 @@
 # Livewire Helper
 ## About Livewire Helper
 
-Livewire helper is a simple base project that you can use to ask question of people in both the [Livewire Discord Help Channel](https://discord.gg/AWZt3P), and to create issues in the [Livewire repository](https://github.com/livewire/livewire) that are too complex for [Laravel Playground](https://laravelplayground.com/#/)
+Livewire helper is a simple base project that you can use to ask questions of people in both the [Livewire Discord Help Channel](https://discord.gg/AWZt3P), and to create issues in the [Livewire repository](https://github.com/livewire/livewire) that are too complex for [Laravel Playground](https://laravelplayground.com/#/).
 
 ### Sections
 
@@ -56,7 +56,9 @@ If you are running bash or zsh you can now make an alias to easily run your test
 alias t='clear;php -n vendor/bin/pest --exclude-group external'
 ```
 
-This clears your screen, runs your tests with the -n flag (a speed optimization that clears php_ini variables. You can always add specific ones back in the test that needs one) Also it will exclude long-running tests. You need to annotate those yourself.
+This clears your screen, runs your tests with the -n flag (a speed optimization that clears php_ini variables. You can always add specific ones back in the test that needs one). Also, it will exclude long-running tests. You need to annotate those yourself.
+
+Try it out!
 
 ```
 t
@@ -65,7 +67,7 @@ t
 
 ### 4. Install [Laravel Telescope](https://laravel.com/docs/8.x/telescope#introduction)
 
-Telescope, is a laravel monitoring and debugging system that is insanely powerful that could help you debug your issues rapidly. If you have a [Laracasts](https://laracasts.com/) account, watch these episodes to learn how you can use it.
+Telescope is a laravel monitoring and debugging system that is insanely powerful. It can help you debug your issues rapidly. If you have a [Laracasts](https://laracasts.com/) account, watch these episodes to learn how you can use it.
  - [Telescope Features](https://laracasts.com/series/learn-telescope/episodes/1)
  - [Telescope as a Monitoring App](https://laracasts.com/series/learn-telescope/episodes/2)
 
@@ -82,9 +84,9 @@ php artisan telescope:install
 You will need to migrate your database before you can use telescope 
 
 
-### 5. Configure you environment by making changes to .env.example, You will need to do the steps 5 and 6 locally
+### 5. Configure your environment by making changes to .env.example. You will need to do steps 5 and 6 locally.
 
-.env.example, should always mirror you .env file, which should ***NEVER*** be committed to your git repository. Such that you can share your .env.example and people on your team will know exactly what they will need to populate to run your project. Any keys you add you .env, you should add with a note to your.evn.example
+.env.example should always mirror your .env file. The .env file should ***NEVER*** be committed to your git repository. Such that you can share your .env.example and people on your team will know exactly what they will need to populate to run your project. Any keys you add to your .env, you should add with a note to your .evn.example.
 
 ```
 # change this ...
@@ -151,7 +153,7 @@ You can now make your livewire component with the corresponding models and facto
 
 
 
-Find me on discord us on discord if you have any questions.
+Find us on discord us on discord if you have any questions.
 
 -Roni :)
 
