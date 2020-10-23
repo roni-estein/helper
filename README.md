@@ -88,7 +88,7 @@ php artisan telescope:install
 You will need to migrate your database before you can use telescope 
 
 
-### 5. Configure you environment by making changes to .env.example, You will need to do the following steps locally
+### 5. Configure you environment by making changes to .env.example, You will need to do the steps 5 and 6 locally
 
 .env.example, should always mirror you .env file, which should ***NEVER*** be committed to your git repository. Such that you can share your .env.example and people on your team will know exactly what they will need to populate to run your project. Any keys you add you .env, you should add with a note to your.evn.example
 
@@ -148,9 +148,18 @@ php artisan migrate
  - use RefreshDatabase in Feature only, limit your unit tests to class functions only
  - update Unit/ExampleTest to be a pest test
  - update Feature/ExampleTest to be a pest test
- - update composer.json to php 7.4 to allow you the most current function set.   
+ - update composer.json to php 7.4 to allow you the most current function set.
 
 
+### 8. We did it!!!
+
+You can now make your livewire component with the corresponding models and factories you need to ask your question. You should have a well crafted factory for each model in your issue. So that someone can help you solve your problem or present your issue as quickly and as easily as possible.
+
+
+
+Find me on discord us on discord if you have any questions.
+
+-Roni :)
 
 
 ## License
