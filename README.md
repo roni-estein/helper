@@ -142,6 +142,13 @@ touch database/database.sqlite
 php artisan migrate
 ```
 
+### 7. Setup Pest to use your database in your `tests/Feature` folder and upgrade `composer.json` to use php ^7.4
+
+ - use Tests\TestCase in both Feature and Unit directories
+ - use RefreshDatabase in Feature only, limit your unit tests to class functions only
+ - update Unit/ExampleTest to be a pest test
+ - update Feature/ExampleTest to be a pest test
+ - update composer.json to php 7.4 to allow you the most current function set.   
 
 
 
