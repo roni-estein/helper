@@ -26,6 +26,49 @@ git init
 ```
 
 
+### 2. Install [Laravel](https://laravel.com/)
+
+```
+laravel new helper --jet --stack=livewire
+```
+
+
+
+### 3. Install [Pest PHP](https://pestphp.com/docs/installation)
+
+```
+composer require phpunit/phpunit:"^9.3.10" --dev --update-with-dependencies
+```
+
+```
+composer require pestphp/pest --dev --with-all-dependencies
+```
+
+Install the Pest PHP - Plug-in
+
+```
+composer require pestphp/pest-plugin-laravel --dev && php artisan pest:install
+```
+
+You can now verify your example tests
+
+```
+./vendor/bin/pest
+```
+
+If you are running bash or zsh you can now make an alias to easily run your tests and save it to your .bash_aliases or other shell initialization file or even just type it into your console here is mine.
+
+```
+alias t='clear;php -n vendor/bin/pest --exclude-group external'
+```
+
+This clears your screen, runs your tests with the -n flag (a speed optimization that clears php_ini variables. You can always add specific ones back in the test that needs one) Also it will exclude long-running tests. You need to annotate those yourself.
+
+```
+t
+```
+
+
 
 ## License
 
