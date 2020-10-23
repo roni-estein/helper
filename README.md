@@ -88,7 +88,7 @@ php artisan telescope:install
 You will need to migrate your database before you can use telescope 
 
 
-### 5. Configure you environment by making changes to .env.example
+### 5. Configure you environment by making changes to .env.example, You will need to do the following steps locally
 
 .env.example, should always mirror you .env file, which should ***NEVER*** be committed to your git repository. Such that you can share your .env.example and people on your team will know exactly what they will need to populate to run your project. Any keys you add you .env, you should add with a note to your.evn.example
 
@@ -125,6 +125,22 @@ cp .env.example .env
 php artisan key:generate
 ```
 
+
+### 6. Migrate your database
+
+and add database/database.sqlite to your .gitignore, this will allow us to have a database/database.sqlite without adding it to the project
+
+```
+echo database/database.sqlite >> .gitignore
+```
+
+```
+touch database/database.sqlite
+```
+
+```
+php artisan migrate
+```
 
 
 
