@@ -152,8 +152,7 @@ php artisan migrate
 You can now make your livewire component with the corresponding models and factories you need to ask your question. You should have a well crafted factory for each model in your issue. So that someone can help you solve your problem or present your issue as quickly and as easily as possible.
 
 
-
-Find us on discord us on discord if you have any questions.
+Find us on discord on discord if you have any questions.
 
 -Roni :)
 
