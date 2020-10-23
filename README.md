@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/roni-estein/helper/blob/master/public/EktKz-XWMAAVI4P.jpeg?raw=true" width="400"></a></p>
+<p align="center"><img src="https://github.com/roni-estein/helper/blob/master/public/nerdy-livewire.png?raw=true" width="300"></p>
 
 # Livewire Helper
 ## About Livewire Helper
