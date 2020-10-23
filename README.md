@@ -15,6 +15,7 @@ Livewire helper is a simple base project that you can use to ask question of peo
 
 Steps are broken down into sections that are tagged, so you can jump to a specific place in the installation process if you need to make any changes. I'll list the steps we've made to produce this helper project in case you want to do this on your own.
 
+
 ### 1. Git Init
 
 The first step you should do in any project, you should always start off by making a git repository so that you can roll back and undo
@@ -31,7 +32,6 @@ git init
 ```
 laravel new helper --jet --stack=livewire
 ```
-
 
 
 ### 3. Install [Pest PHP](https://pestphp.com/docs/installation)
@@ -67,6 +67,66 @@ This clears your screen, runs your tests with the -n flag (a speed optimization 
 ```
 t
 ```
+
+
+### 4. Install [Laravel Telescope](https://laravel.com/docs/8.x/telescope#introduction)
+
+Telescope, is a laravel monitoring and debugging system that is insanely powerful that could help you debug your issues rapidly. If you have a [Laracasts](https://laracasts.com/) account, watch these episodes to learn how you can use it.
+ - [Telescope Features](https://laracasts.com/series/learn-telescope/episodes/1)
+ - [Telescope as a Monitoring App](https://laracasts.com/series/learn-telescope/episodes/2)
+
+Installation instructions
+
+```
+composer require laravel/telescope
+```
+
+```
+php artisan telescope:install
+```
+
+You will need to migrate your database before you can use telescope 
+
+
+### 5. Configure you environment by making changes to .env.example
+
+.env.example, should always mirror you .env file, which should ***NEVER*** be committed to your git repository. Such that you can share your .env.example and people on your team will know exactly what they will need to populate to run your project. Any keys you add you .env, you should add with a note to your.evn.example
+
+```
+# change this ...
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+
+# to this
+
+DB_CONNECTION=sqlite
+#DB_HOST=127.0.0.1
+#DB_PORT=3306
+#DB_DATABASE=laravel
+#DB_USERNAME=root
+#DB_PASSWORD=
+
+# next, change mail from smtp to log
+MAIL_MAILER=log
+```
+
+Finally, copy .env.example to .env and generate your app key
+
+```
+cp .env.example .env
+```
+
+```
+php artisan key:generate
+```
+
+
+
 
 
 
